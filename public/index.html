@@ -6,16 +6,23 @@
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
    <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="css/main.css">
    <script defer src="js/index.js"></script>
    <script defer src="js/router.js"></script>
    <title>Welcome to JDUK</title>
    <link rel="icon" type="image/x-icon" href="img/faveicon.png">
 </head>
 <body>
+  <div class="back__color"></div>
    <header class="header" id="header">
-     <div class="container logo__section">
-       <a href="/" onclick="route()"><img src="img/logo.jpeg" class="logo" alt=""></a> <a href="/" class="logo__title" onclick="route()">The Association of Jordanian Doctors in the United Kingdom</a> </div>
+      
+     <div class="container logo__section" >
+      <a href="/" onclick="route()">
+        <img id="logo__scroll"  src="img/logo.jpeg" class="logo" alt="">
+      </a>
+      <a href="/" id="title__scroll" class="logo__title" onclick="route()">
+        The Association of Jordanian Doctors in the United Kingdom
+      </a> 
+     </div>
 
       <nav class="nav container">
          <a href="#" class="nav__toggle"></a>
@@ -34,17 +41,20 @@
                </li>
 
                <li class="nav__item">
-                  <a href="/news" class="nav__link" onclick="route()"> <span>News & Activities </span>
+                  <a href="/news" class="nav__link" onclick="route()"> 
+                    <span>News & Activities </span>
                   </a>
                </li>
 
                <li class="nav__item">
-                  <a href="/members" class="nav__link" onclick="route()"> <span>Members</span>
+                  <a href="/members" class="nav__link" onclick="route()"> 
+                    <span>Members</span>
                   </a>
                </li>
 
                <li class="nav__item">
-                  <a href="/contact" class="nav__link" onclick="route()"> <span>Contact</span>
+                  <a href="/contact" class="nav__link" onclick="route()"> 
+                    <span>Contact</span>
                   </a>
                </li>
             </ul>
@@ -95,5 +105,6 @@
        </div>
        <div class="footer__print">© 2025 JDUK. All rights reserved.</div>
    </footer>
+
 </body>
 </html>

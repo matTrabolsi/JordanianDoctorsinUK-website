@@ -71,6 +71,19 @@ const observer = new IntersectionObserver((entries) => {
         });
       });
 
-      const hiddenElements = document.querySelectorAll('.card');
-      hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElements = document.querySelectorAll('.card');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+  window.addEventListener("scroll", function () {
+    const logo = document.getElementById("logo__scroll");
+    const logoTitle = document.getElementById("title__scroll");
+    if (window.scrollY > 50) {
+      logo.classList.add("shrink");
+      logoTitle.classList.add("shrink__title");
+    } else {
+      logo.classList.remove("shrink");
+      logoTitle.classList.remove("shrink__title");
+    }
+  });header
 

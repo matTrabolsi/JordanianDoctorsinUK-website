@@ -67,6 +67,15 @@ a {
 .container {
   max-width: 95%;
   margin-inline: 1.5rem;
+  
+}
+.back__color{
+  z-index: -999;
+  padding: 150px;
+  background-color: var(--black-color);
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 
@@ -82,11 +91,15 @@ a {
     display: flex;
     align-items: center;
     margin-top: 10px;
+
 }
 
 .logo{
     height: 6rem;
     border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    --webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 
 }
 .logo__title{
@@ -94,6 +107,9 @@ a {
     margin-left: 10px;
     width: 20rem;
     font-size: 1.3rem;
+    transition: all 0.4s ease-in-out;
+    --webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 }
 
 .nav {
@@ -271,6 +287,14 @@ a {
   transform: translateX(0);
 }
 
+  .shrink {
+    height: 3rem;    
+  }
+  .shrink__title{
+    font-size: 0.95rem;
+    width: 15rem;
+
+  }
 
 
 /* 
@@ -524,13 +548,13 @@ starts here =======================================================
   }
 
   .about__content h2{
-    font-size: 30px;
+    font-size: 27px;
     color: #284966;
   }
 
   .about__content p{
     color: #666;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 1.5;
     margin-top: 10px;
     text-align: justify;
@@ -576,7 +600,7 @@ starts here =======================================================
     z-index: -1;
     transition: transform 0.7s;
     transform-origin: 0 0 ;
-    transition-timing-function: cubic-bezier(0.5, 1.5, 0.4, 0.7);
+    transition-timing-function: cubic-bezier(.1,.45,.62,.95);
     transform: scaleX(0);
   }
   .about__btn:hover{
@@ -616,13 +640,19 @@ starts here =======================================================
   }
   .wrapper{
     flex-direction: column;
-    width: 95%;
+    width: 85%;
   }
   .about__container .about__heading h1{
     font-size: 40px;
   }
   .about__content{
     width: 100%;
+  }
+  .about__content h2{
+    font-size: 19px;
+  }
+  .about__content p{
+    font-size: 15px;
   }
   .about__image{
     width: 100%;
