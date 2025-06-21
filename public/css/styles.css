@@ -38,12 +38,17 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--white-color);
+  height: 100%;
+}
+.main{
+  min-height: 100%;
 }
 
 #news{
@@ -274,11 +279,12 @@ a {
   background-color: #222;
   color: #eeeeee8c;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: -100px;
+  clear: both;
   font-family: Arial, sans-serif;
   width: 100%;
-  display: grid;
+  display: hidden;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
