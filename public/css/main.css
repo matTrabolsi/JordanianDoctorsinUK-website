@@ -5,9 +5,8 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    height: auto;
-    padding-bottom: 200px;
     min-height: 100%;
+    margin-bottom: 300px;
 }
 
 
