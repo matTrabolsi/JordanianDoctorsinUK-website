@@ -1053,7 +1053,10 @@ margin-bottom: 80px;
     .memimg__section p{
     padding: 30px 40px;
   }
-
+    .main{
+    position: relative;
+    top: 110px;
+  }
 
 }
 @media (max-width: 420px){
@@ -1070,7 +1073,7 @@ margin-bottom: 80px;
 
     .main{
     position: relative;
-    top: 80px;
+    top: 90px;
 
   }
   .breaking-news{
