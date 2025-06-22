@@ -44,30 +44,47 @@
                      <span>home</span>
                   </a>
                </li>
-               <li class="nav__item nav__item--has-dropdown">
-                  <a class="nav__link">
-                     <span>About us</span>
-                  </a>
-                    <ul class="nav__dropdown">
-                        <li><a href="/about" class="nav__link nav__dropdown-link" onclick="route()"><span>Our Mission</span></a></li>
-                        <li><a href="/members" class="nav__link nav__dropdown-link" onclick="route()"><span>Meet the Team</span></a></li>
-                     </ul>
-               </li>
+<li class="nav__item nav__item--has-dropdown">
+  <a class="nav__link1" onclick="toggleDropdown(event)">
+    <span>About us <i class="ri-arrow-down-s-line dropdown-icon"></i></span>
+  </a>
+  <ul class="nav__dropdown">
+    <li>
+      <a href="/about" class="nav__link nav__dropdown-link" onclick="route()">
+        <span>Our Mission</span>
+      </a>
+    </li>
+    <li>
+      <a href="/members" class="nav__link nav__dropdown-link" onclick="route()">
+        <span>Meet the Team</span>
+      </a>
+    </li>
+  </ul>
+</li>
+
 
                <li class="nav__item">
                   <a href="/news" class="nav__link" onclick="route()"> 
                     <span>News & Activities</span>
                   </a>
                </li>
-               <li class="nav__item nav__item--has-dropdown">
-                  <a href="/conference" class="nav__link" onclick="route()"> 
-                    <span>Conference</span>
-                  </a>
-                  <ul class="nav__dropdown">
-                        <li><a href="/conference" class="nav__link nav__dropdown-link" onclick="route()"><span>Conference 2023</span></a></li>
-                        <li><a href="/conference" class="nav__link nav__dropdown-link" onclick="route()"><span>Conference 2022</span></a></li>
-                  </ul>
-               </li>
+<li class="nav__item nav__item--has-dropdown">
+  <a class="nav__link1" onclick="toggleDropdown(event)">
+    <span>Conference<i class="ri-arrow-down-s-line dropdown-icon"></i></span>
+  </a>
+  <ul class="nav__dropdown">
+    <li>
+      <a href="/confernece" class="nav__link nav__dropdown-link" onclick="route()">
+        <span>Conference 2023</span>
+      </a>
+    </li>
+    <li>
+      <a href="/conference" class="nav__link nav__dropdown-link" onclick="route()">
+        <span>Conference 2024</span>
+      </a>
+    </li>
+  </ul>
+</li>
                <li class="nav__item">
                   <a href="/electives" class="nav__link" onclick="route()"> 
                     <span>Electives</span>
