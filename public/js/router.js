@@ -25,13 +25,13 @@ const routes = {
         path: "/pages/news.html",
         title: "News & Activities - JDUK"
     },
-    "/members": {
-        path: "/pages/members.html",
-        title: "Members - JDUK"
+    "/join": {
+        path: "/pages/join.html",
+        title: "join - JDUK"
     },
-    "/contact": {
-        path: "/pages/contact.html",
-        title: "Contact Us - JDUK"
+    "/success": {
+        path: "/pages/success.html",
+        title: "success - JDUK"
     }
 };
 
