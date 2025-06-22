@@ -21,6 +21,18 @@ const routes = {
         path: "/pages/about.html",
         title: "About Us - JDUK"
     },
+    "/electives": {
+        path: "/pages/electives.html",
+        title: "Electives - JDUK"
+    },
+    "/conference": {
+        path: "/pages/conference.html",
+        title: "Conference - JDUK"
+    },
+        "/members": {
+        path: "/pages/members.html",
+        title: "Our Members - JDUK"
+    },
     "/news": {
         path: "/pages/news.html",
         title: "News & Activities - JDUK"
