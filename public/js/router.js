@@ -54,6 +54,7 @@ const handleLocation = async () => {
     const currentRoutePath = routeObject.path;
     const pageTitle = routeObject.title;
 
+
     try {
         const response = await fetch(currentRoutePath);
 
@@ -66,6 +67,9 @@ const handleLocation = async () => {
         if (appContentDiv) {
             appContentDiv.innerHTML = html;
             document.title = pageTitle;
+            setTimeout(() => {
+                window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+            }, 30);
             initializePageSpecificScripts(path);
         } else {
             console.error("ERROR: Div with id 'app-content' not found in the DOM.");
