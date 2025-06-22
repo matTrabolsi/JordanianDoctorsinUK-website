@@ -492,7 +492,8 @@ padding: 20px 0 35px 0;
   animation: scroll-left 30s linear infinite;
 }
 .ticker span{
-  padding: 0 20px;
+  padding: 0 18px;
+  font-size: 17px;
 }
 
 @keyframes scroll-left {
@@ -512,7 +513,7 @@ here ===========================================================================
 
 .main{
     position: relative;
-    top: 155px;
+    top: 165px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -953,11 +954,16 @@ starts here =======================================================
 }
     .main{
     position: relative;
-    top: 85px;
+    top: 100px;
   }
   .breaking-news {
     top: 85px;
   }
+  
+.ticker span{
+  padding: 0 10px;
+  font-size: 14px;
+}
 
   .cards{
     grid-template-columns: repeat(1, 1fr);
@@ -1064,8 +1070,11 @@ margin-bottom: 80px;
 
     .main{
     position: relative;
-    top: 65px;
+    top: 80px;
 
+  }
+  .breaking-news{
+    top: 65px;
   }
 
 
